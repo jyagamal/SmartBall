@@ -438,6 +438,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4450543387455444393, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
+      propertyPath: m_speed
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578927342306602664, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8578927342306602664, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
+      propertyPath: m_Constraints
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8578927342306602667, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -482,6 +494,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8578927342306602708, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: dc49a55b2a754e143aedb5071092eb53, type: 2}
     - target: {fileID: 8578927342306602711, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
       propertyPath: m_Name
       value: Ball
