@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3027518881390125608}
   - component: {fileID: 4911474804775291460}
   - component: {fileID: 5265317169960402981}
+  - component: {fileID: 8456657005815780493}
   m_Layer: 0
   m_Name: ScoreObject_50
   m_TagString: Untagged
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8456657005815780493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923134647801998094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca36ff2d7677304fb191759cced5a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_score: 50

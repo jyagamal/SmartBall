@@ -196,6 +196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a12340cb86a46d745a175767941da100, type: 3}
+--- !u!1 &611424707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8578927342306602711, guid: 6cc9219bf26c17b498ecf73fd32514c6, type: 3}
+  m_PrefabInstance: {fileID: 8578927340681694954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8446993101809124187, guid: 5ff2b5388d8fa89478721706b72665c3, type: 3}
+      propertyPath: m_ballObject
+      value: 
+      objectReference: {fileID: 611424707}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ff2b5388d8fa89478721706b72665c3, type: 3}
 --- !u!1001 &8578927340681694954
