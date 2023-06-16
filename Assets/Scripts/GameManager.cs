@@ -9,12 +9,16 @@ using UnityEngine;
 -----------------------------------------------------------------------------------*/
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
-    //スコア
-    private int m_score = 0;
+    //発射可能回数
+    [SerializeField]
+    private int m_shotCount;
 
     //ボールオブジェクト
     [SerializeField]
     private GameObject m_ballObject;
+
+    //スコア
+    private int m_score = 0;
 
     //ボールを再配置する場所
     private Vector3 m_restartPoint;
@@ -66,6 +70,33 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
         //ボールを再配置する
         m_ballObject.transform.position = m_restartPoint;
+    }
+
+    /*---------------------------------------------------------------------------------
+    *	
+    *	内容　 : 発射可能回数を減らす
+    *	引数　 : なし
+    *	戻り値 : なし
+    *	 
+    -----------------------------------------------------------------------------------*/
+    public void ReduceShotCount()
+    {
+        if (m_shotCount > 0)
+        {
+            m_shotCount--;
+        }
+    }
+
+    /*---------------------------------------------------------------------------------
+    *	
+    *	内容　 : 発射可能回数を取得する
+    *	引数　 : なし
+    *	戻り値 : 残りの発射可能回数
+    *	 
+    -----------------------------------------------------------------------------------*/
+    public int GetShotCount()
+    {
+        return m_shotCount;
     }
 }
 

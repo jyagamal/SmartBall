@@ -18,7 +18,10 @@ public class ScoreObject : MonoBehaviour
             GameManager.Instance.AddScore(m_score);
 
             //ボールを再配置する
-            //GameManager.Instance.ReconfigurationBall();
+            GameManager.Instance.ReconfigurationBall();
+
+            //ボールの実行状態をfalseにする
+            collision.transform.GetComponent<Ball>().SetIsPlay(false);
         }
     }
 
