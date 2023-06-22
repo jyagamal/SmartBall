@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 /*---------------------------------------------------------------------------------
 *	
@@ -16,6 +18,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     //ボールオブジェクト
     [SerializeField]
     private GameObject m_ballObject;
+
+    //スコアUI
+    [SerializeField]
+    private TMPro.TextMeshProUGUI m_scoreUi;
 
     //スコア
     private int m_score = 0;
@@ -42,6 +48,9 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
         //デバッグ用にコンソールにスコアを表示する
         Debug.Log("Score : " + m_score);
+
+        //UIのスコアも更新する
+        m_scoreUi.text = "Score :" + m_score.ToString();
     }
 
     /*---------------------------------------------------------------------------------

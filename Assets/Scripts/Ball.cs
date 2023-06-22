@@ -21,19 +21,19 @@ public class Ball : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        //スペースキーが押された時、且つ
-        //まだ実行中ではなく、且つ
-        //発射可能回数が1以上なら
-        if (Input.GetKeyDown(KeyCode.Space) &&
-            !m_isPlay &&
-            GameManager.Instance.GetShotCount() >= 1)
-        {
-            //ボールを発射する
-            Shot();
-        }
-    }
+    //void Update()
+    //{
+    //    //スペースキーが押された時、且つ
+    //    //まだ実行中ではなく、且つ
+    //    //発射可能回数が1以上なら
+    //    if (Input.GetKeyDown(KeyCode.Space) &&
+    //        !m_isPlay &&
+    //        GameManager.Instance.GetShotCount() >= 1)
+    //    {
+    //        //ボールを発射する
+    //        Shot();
+    //    }
+    //}
 
     /*---------------------------------------------------------------------------------
     *	
@@ -44,6 +44,15 @@ public class Ball : MonoBehaviour
     -----------------------------------------------------------------------------------*/
     public void Shot()
     {
+        //実行中か
+        //発射可能回数が0以下なら
+        if (m_isPlay ||
+            GameManager.Instance.GetShotCount() <= 0)
+        {
+            //これ以上処理しない
+            return;
+        }
+
         //ボールに力を加える
         m_rb.AddForce(new Vector3(0.0f, m_speed, 0.0f), ForceMode.Impulse);
 
